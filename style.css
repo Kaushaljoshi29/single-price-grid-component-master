@@ -4,6 +4,7 @@
   --Cyan: hsl(179, 62%, 43%);
   --Cyan2: hsla(179, 62%, 43%, 0.699);
   --Bright-Yellow: hsl(71, 73%, 54%);
+  --Bright-Yellow2: hsla(71, 73%, 54%, 0.7);
 
   --Light-Gray: hsl(204, 43%, 93%);
   --Grayish-Blue: hsl(218, 22%, 67%);
@@ -30,7 +31,6 @@ body {
     "join-community"
     "monthly-sub"
     "why-us";
-  min-height: 300px;
   max-width: 350px;
   margin: 2em 1em;
 }
@@ -43,6 +43,11 @@ body {
   margin-bottom: 1em;
 }
 
+.heading {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .join-community {
   grid-area: join-community;
   background-color: #fff;
@@ -52,8 +57,6 @@ body {
 
 .join-community-heading {
   color: var(--Cyan);
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .join-community-sub-heading {
@@ -71,11 +74,6 @@ body {
   grid-area: monthly-sub;
   background-color: var(--Cyan);
   color: #fff;
-}
-
-.monthly-sub-heading {
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .monthly-sub-price {
@@ -107,17 +105,17 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.monthly-sub-btn:hover {
+  background-color: var(--Bright-Yellow2);
+  cursor: pointer;
+}
+
 .why-us {
   grid-area: why-us;
   background-color: var(--Cyan2);
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   color: #fff;
-}
-
-.why-us-heading {
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .why-us ul {
